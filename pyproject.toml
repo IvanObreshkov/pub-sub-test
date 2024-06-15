@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pub-sub-test"
+version = "0.1.0"
+description = ""
+authors = ["Ivan Obeshkov <ivan.obreshkov@adata.pro>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "^3.0.3"
+google-cloud-storage = "^2.16.0"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.scripts]
+start = "pub_sub_test.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
